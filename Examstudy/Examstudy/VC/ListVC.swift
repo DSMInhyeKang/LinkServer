@@ -6,15 +6,29 @@
 //
 
 import UIKit
+import Alamofire
 
 class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return result.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
+        cell.lbTitle.text = "\(result[indexPath.row].info)"
+        return cell
     }
+    
+//    func listTableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return result.count
+//    }
+//
+//    func listTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
+//        cell.lbTitle.text = "\(result[indexPath.row].name)"
+//        return cell
+//    }
+    
     
     
     @IBOutlet weak var listTableView: UITableView!
@@ -30,37 +44,46 @@ class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         getUsers()
     }
     
+//    private func getUsers() {
+//        AF.request("https://randomuser.me/api/?results=20&inc=name,email", method: .get)
+//            .validate(statusCode: 200..<500)
+//            .responseDecodable(of: friendsModel.self) {
+//                response in switch response.result {
+//                case.success:
+//                    if let data = try? JSONDecoder().decode(friendsModel.self, from: response.data!){
+//                        print(data)
+//                        DispatchQueue.main.async {
+//                            self.result = data.results
+//                            self.listTableView.reloadData()
+//                        }
+//                    }
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//    }
+    
     private func getUsers() {
-        AF.request("https://randomuser.me/api/?results=20&inc=name,email", method: .get)
+        AF.request("http://13.125.227.67:8080/post/list", method: .get)
             .validate(statusCode: 200..<500)
-            .responseDecodable(of: friendsModel.self) {
+            .responseDecodable(of: infoModel.self) {
                 response in switch response.result {
                 case.success:
-                    if let data = try? JSONDecoder().decode(friendsModel.self, from: response.data!){
+                    if let data = try? JSONDecoder().decode(infoModel.self, from: response.data!){
                         print(data)
                         DispatchQueue.main.async {
                             self.result = data.results
-                            self.mainTableView.reloadData()
+                            self.listTableView.reloadData()
                         }
                     }
                 case .failure(let error):
                     print(error)
                 }
-                }
             }
+    }
         
-    }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return result.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! TableViewCell
-        cell.lbTitle.text = "\(result[indexPath.row].name)"
-        return cell
-    }
 
     /*
     // MARK: - Navigation
@@ -71,5 +94,6 @@ class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

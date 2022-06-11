@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct friendsModel: Codable {
+struct infoModel: Codable {
     
     let results: [resultsArr]
     
@@ -15,12 +15,20 @@ struct friendsModel: Codable {
 
 struct resultsArr: Codable {
     
-    let name: fullName
-    let email: String
+//    let name: fullName
+//    let email: String
+//
+//    struct fullName: Codable {
+//        let title: String
+//        let first: String
+//        let last: String
     
-    struct fullName: Codable {
+    
+    let info: aboutInfo
+    
+    struct aboutInfo: Codable {
+        let id: Int
         let title: String
-        let first: String
-        let last: String
+        let content: String
     }
 }
