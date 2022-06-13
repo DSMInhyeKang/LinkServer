@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F55805D285353E5006DF121 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55805C285353E5006DF121 /* DetailVC.swift */; };
 		3F55805F2853540D006DF121 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55805E2853540D006DF121 /* ListVC.swift */; };
-		3F558062285354D1006DF121 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F558061285354D1006DF121 /* TableViewCell.swift */; };
+		3F558062285354D1006DF121 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F558061285354D1006DF121 /* ListTableViewCell.swift */; };
 		3F5825DF28535FE2008A42E8 /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5825DE28535FE2008A42E8 /* info.swift */; };
 		3F5A0B6C28532F9F0097094B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B6B28532F9F0097094B /* AppDelegate.swift */; };
 		3F5A0B6E28532F9F0097094B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B6D28532F9F0097094B /* SceneDelegate.swift */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		3F55805C285353E5006DF121 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		3F55805E2853540D006DF121 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
-		3F558061285354D1006DF121 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3F558061285354D1006DF121 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		3F5825DE28535FE2008A42E8 /* info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info.swift; sourceTree = "<group>"; };
 		3F5A0B6828532F9F0097094B /* Examstudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examstudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5A0B6B28532F9F0097094B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				3F55805C285353E5006DF121 /* DetailVC.swift */,
 				3F55805E2853540D006DF121 /* ListVC.swift */,
-				3F558061285354D1006DF121 /* TableViewCell.swift */,
+				3F558061285354D1006DF121 /* ListTableViewCell.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 				3F55805F2853540D006DF121 /* ListVC.swift in Sources */,
 				3F55805D285353E5006DF121 /* DetailVC.swift in Sources */,
 				3F5A0B6C28532F9F0097094B /* AppDelegate.swift in Sources */,
-				3F558062285354D1006DF121 /* TableViewCell.swift in Sources */,
+				3F558062285354D1006DF121 /* ListTableViewCell.swift in Sources */,
 				3F5825DF28535FE2008A42E8 /* info.swift in Sources */,
 				3F5A0B7628532F9F0097094B /* Examstudy.xcdatamodeld in Sources */,
 				3F5A0B6E28532F9F0097094B /* SceneDelegate.swift in Sources */,
