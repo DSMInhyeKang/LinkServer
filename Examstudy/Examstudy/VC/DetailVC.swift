@@ -19,14 +19,14 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let txtFieldTitle = self.txtFieldTitle.text
-        let txtViewContent = self.txtViewContent.text
     }
     
     
     @IBAction func btnPost(_ sender: Any) {
         
-        
+        let txtFieldTitle = self.txtFieldTitle.text
+        let txtViewContent = self.txtViewContent.text
+
         //전송할 값
         let url = "http://13.125.227.67:8080/post"
         var request = URLRequest(url: URL(string: url)!)
@@ -45,7 +45,8 @@ class DetailVC: UIViewController {
             print("http Body Error")
         }
         
-        AF.request(request).responseString { (response) in
+        AF.request(request).response { (response) in
+            print(response.request)
             switch response.result {
             case .success:
                 print("POST 성공")
@@ -54,7 +55,7 @@ class DetailVC: UIViewController {
             }
         }
         
-        var result: [postData] = []
+//        var result: [postData] = []
         
         //    extension DetailVC: UITableViewDataSource, UITableViewDelegate {
         //        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
