@@ -17,6 +17,7 @@
 		3F5A0B7628532F9F0097094B /* Examstudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B7428532F9F0097094B /* Examstudy.xcdatamodeld */; };
 		3F5A0B7828532FA00097094B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A0B7728532FA00097094B /* Assets.xcassets */; };
 		3F5A0B7B28532FA00097094B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5A0B7928532FA00097094B /* LaunchScreen.storyboard */; };
+		3F92E67A2858BCEE00FCB5EC /* PostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F92E6792858BCEE00FCB5EC /* PostInfo.swift */; };
 		DE034929727A2030F5E8B2D4 /* Pods_Examstudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAD1D569A4F6347DCB9EDEC /* Pods_Examstudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3F5A0B7728532FA00097094B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5A0B7A28532FA00097094B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5A0B7C28532FA00097094B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F92E6792858BCEE00FCB5EC /* PostInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInfo.swift; sourceTree = "<group>"; };
 		8597371460F4B5ECF0E3B770 /* Pods-Examstudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examstudy.release.xcconfig"; path = "Target Support Files/Pods-Examstudy/Pods-Examstudy.release.xcconfig"; sourceTree = "<group>"; };
 		D80C78AB96D9CF532165A6DC /* Pods-Examstudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examstudy.debug.xcconfig"; path = "Target Support Files/Pods-Examstudy/Pods-Examstudy.debug.xcconfig"; sourceTree = "<group>"; };
 		EFAD1D569A4F6347DCB9EDEC /* Pods_Examstudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Examstudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		3F5A0B6A28532F9F0097094B /* Examstudy */ = {
 			isa = PBXGroup;
 			children = (
+				3F92E6782858BCB000FCB5EC /* Struct */,
 				3F55806028535423006DF121 /* VC */,
 				3F5A0B6B28532F9F0097094B /* AppDelegate.swift */,
 				3F5A0B6D28532F9F0097094B /* SceneDelegate.swift */,
@@ -98,9 +101,17 @@
 				3F5A0B7928532FA00097094B /* LaunchScreen.storyboard */,
 				3F5A0B7C28532FA00097094B /* Info.plist */,
 				3F5A0B7428532F9F0097094B /* Examstudy.xcdatamodeld */,
-				3F5825DE28535FE2008A42E8 /* info.swift */,
 			);
 			path = Examstudy;
+			sourceTree = "<group>";
+		};
+		3F92E6782858BCB000FCB5EC /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				3F5825DE28535FE2008A42E8 /* info.swift */,
+				3F92E6792858BCEE00FCB5EC /* PostInfo.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		D77693911049BEAD693D062D /* Frameworks */ = {
@@ -229,6 +240,7 @@
 				3F55805F2853540D006DF121 /* ListVC.swift in Sources */,
 				3F55805D285353E5006DF121 /* DetailVC.swift in Sources */,
 				3F5A0B6C28532F9F0097094B /* AppDelegate.swift in Sources */,
+				3F92E67A2858BCEE00FCB5EC /* PostInfo.swift in Sources */,
 				3F558062285354D1006DF121 /* ListTableViewCell.swift in Sources */,
 				3F5825DF28535FE2008A42E8 /* info.swift in Sources */,
 				3F5A0B7628532F9F0097094B /* Examstudy.xcdatamodeld in Sources */,
