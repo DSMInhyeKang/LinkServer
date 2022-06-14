@@ -8,7 +8,9 @@
 import UIKit
 
 class DetailVC: UIViewController {
-
+    @IBOutlet weak var txFieldTitle: UITextField!
+    @IBOutlet weak var txtViewContent: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
