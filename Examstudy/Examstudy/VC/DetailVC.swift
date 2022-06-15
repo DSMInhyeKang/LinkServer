@@ -26,7 +26,7 @@ class DetailVC: UIViewController {
         
         let txtFieldTitle = self.txtFieldTitle.text
         let txtViewContent = self.txtViewContent.text
-
+        
         //전송할 값
         let url = "http://13.125.227.67:8080/post"
         var request = URLRequest(url: URL(string: url)!)
@@ -55,58 +55,6 @@ class DetailVC: UIViewController {
             }
         }
         
-//        var result: [postData] = []
-        
-        //    extension DetailVC: UITableViewDataSource, UITableViewDelegate {
-        //        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //            return result.count
-        //        }
-        //
-        //        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //            let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ListTableViewCell
-        //            cell.lbTitle.text = "\(result[indexPath.row].title)"
-        //            return cell
-        //        }
-        //    }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        //        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-        //
-        //            DispatchQueue.main.async() {
-        //                do {
-        //                    let object = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary
-        //                    guard let jsonObject = object else { return }
-        //
-        //                    let result = jsonObject["result"] as? String
-        //                    let id = jsonObject["id"] as? String
-        //                    let title = jsonObject["title"] as? String
-        //                    let content = jsonObject["content"] as? String
-        //
-        //                    if result == "SUCCESS" {
-        //                        self.txtViewContent.text = "아이디: \(id!)" + "\n"
-        //                        + "제목: \(title!)" + "\n"
-        //                        + "내용: \(content!)" + "\n"
-        //                    }
-        //                } catch let e as NSError {
-        //                    print("An error has occured while parsing JSONObject: \(e.localizedDescription)")
-        //                }
-        //            }
-        //        }
-        //
-        //        task.resume()
-        //    }
-        
-        
+        dismiss(animated: true, completion: nil)
     }
 }
