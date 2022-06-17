@@ -64,7 +64,7 @@
                     <navigationItem key="navigationItem" title="목록" id="hfN-XJ-AMQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DvC-yt-CLP">
                             <connections>
-                                <segue destination="4SG-Xe-FLU" kind="showDetail" id="Mvm-z4-pUh"/>
+                                <segue destination="4SG-Xe-FLU" kind="show" id="Mvm-z4-pUh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
